@@ -1,3 +1,5 @@
+const { merge } = require('webpack-merge');
+
 const path = require('path');
 const { createConfig } = require('@openedx/frontend-build');
 
@@ -8,4 +10,8 @@ config.resolve.alias = {
   '@src': path.resolve(__dirname, 'src'),
 };
 
-module.exports = config;
+module.exports = merge(config, {
+  devServer: {
+    allowedHosts: 'all',
+  },
+});
