@@ -20,14 +20,11 @@ import { getCoursewareOutlineSidebarSettings } from '../../data/selectors';
 import CourseLicense from '../course-license';
 import Sidebar from '../sidebar/Sidebar';
 import NewSidebar from '../new-sidebar/Sidebar';
-import {
-  Trigger as CourseOutlineTrigger,
-  Sidebar as CourseOutlineTray,
-} from '../sidebar/sidebars/course-outline';
 import messages from './messages';
 import HiddenAfterDue from './hidden-after-due';
 import { SequenceNavigation, UnitNavigation } from './sequence-navigation';
 import SequenceContent from './SequenceContent';
+import CourseOutlineSidebarSlot from '../../../plugin-slots/CourseOutlineSidebarSlot';
 
 const Sequence = ({
   unitId,
@@ -166,8 +163,7 @@ const Sequence = ({
   const defaultContent = (
     <>
       <div className="sequence-container d-inline-flex flex-row w-100">
-        <CourseOutlineTrigger />
-        <CourseOutlineTray />
+        <CourseOutlineSidebarSlot />
         <div className="sequence w-100">
           {!isEnabledOutlineSidebar && (
             <div className="sequence-navigation-container">
