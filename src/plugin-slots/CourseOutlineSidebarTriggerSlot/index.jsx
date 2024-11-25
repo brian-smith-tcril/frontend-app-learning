@@ -9,9 +9,7 @@ const CourseOutlineSidebarTriggerSlot = () => (
       mergeProps: true,
     }}
   >
-    <>
-      <CourseOutlineTrigger />
-    </>
+    <CourseOutlineTrigger />
   </PluginSlot>
 );
 

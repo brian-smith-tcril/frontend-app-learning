@@ -8,6 +8,8 @@ This slot is used to replace/modify/hide the course outline sidebar.
 
 ## Example
 
+![📊 in sidebar slot](./screenshot.png)
+
 The following `env.config.jsx` will replace the course outline sidebar entirely.
 
 ```js

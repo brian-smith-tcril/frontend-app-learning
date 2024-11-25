@@ -8,6 +8,8 @@ This slot is used to replace/modify/hide the notifications discussions sidebar.
 
 ## Example
 
+![📊 in sidebar slot](./screenshot.png)
+
 The following `env.config.jsx` will replace the notifications discussions sidebar.
 
 ```js

@@ -9,9 +9,7 @@ const CourseOutlineMobileSidebarTriggerSlot = () => (
       mergeProps: true,
     }}
   >
-    <>
-      <CourseOutlineTrigger isMobileView />
-    </>
+    <CourseOutlineTrigger isMobileView />
   </PluginSlot>
 );
 

@@ -8,6 +8,8 @@ This slot is used to replace/modify/hide the course outline sidebar mobile trigg
 
 ## Example
 
+![📌 in trigger slot](./screenshot.png)
+
 The following `env.config.jsx` will replace the course outline sidebar mobile trigger entirely.
 
 ```js

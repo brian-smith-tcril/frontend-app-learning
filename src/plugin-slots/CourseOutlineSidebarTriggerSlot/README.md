@@ -8,8 +8,8 @@ This slot is used to replace/modify/hide the course outline sidebar trigger.
 
 ## Example
 
-!["📌 in trigger slot with sidebar closed"](./screenshot_1.png)
-!["📌 in trigger slot with sidebar open"](./screenshot_2.png)
+![📌 in trigger slot with sidebar closed](./screenshot_1.png)
+![📌 in trigger slot with sidebar open](./screenshot_2.png)
 
 The following `env.config.jsx` will replace the course outline sidebar trigger entirely.
 

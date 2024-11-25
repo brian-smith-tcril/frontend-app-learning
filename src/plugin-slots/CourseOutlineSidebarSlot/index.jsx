@@ -9,9 +9,7 @@ const CourseOutlineSidebarSlot = () => (
       mergeProps: true,
     }}
   >
-    <>
-      <CourseOutlineTray />
-    </>
+    <CourseOutlineTray />
   </PluginSlot>
 );
 
