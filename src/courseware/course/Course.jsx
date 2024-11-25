@@ -9,16 +9,15 @@ import { breakpoints, useWindowSize } from '@openedx/paragon';
 import { AlertList } from '@src/generic/user-messages';
 import { useModel } from '@src/generic/model-store';
 import { getCoursewareOutlineSidebarSettings } from '../data/selectors';
-import { Trigger as CourseOutlineTrigger } from './sidebar/sidebars/course-outline';
 import Chat from './chat/Chat';
 import SidebarProvider from './sidebar/SidebarContextProvider';
-import SidebarTriggers from './sidebar/SidebarTriggers';
 import NewSidebarProvider from './new-sidebar/SidebarContextProvider';
-import NewSidebarTriggers from './new-sidebar/SidebarTriggers';
+import NotificationsDiscussionsSidebarTriggerSlot from '../../plugin-slots/NotificationsDiscussionsSidebarTriggerSlot';
 import { CelebrationModal, shouldCelebrateOnSectionLoad, WeeklyGoalCelebrationModal } from './celebration';
 import CourseBreadcrumbs from './CourseBreadcrumbs';
 import ContentTools from './content-tools';
 import Sequence from './sequence';
+import CourseOutlineMobileSidebarTriggerSlot from '../../plugin-slots/CourseOutlineMobileSidebarTriggerSlot';
 
 const Course = ({
   courseId,
@@ -109,8 +108,8 @@ const Course = ({
           </>
         )}
         <div className="w-100 d-flex align-items-center">
-          <CourseOutlineTrigger isMobileView />
-          {isNewDiscussionSidebarViewEnabled ? <NewSidebarTriggers /> : <SidebarTriggers /> }
+          <CourseOutlineMobileSidebarTriggerSlot />
+          <NotificationsDiscussionsSidebarTriggerSlot courseId={courseId} />
         </div>
       </div>
 

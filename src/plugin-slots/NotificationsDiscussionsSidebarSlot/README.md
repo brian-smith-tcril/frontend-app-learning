@@ -1,21 +1,21 @@
-# Course Outline Sidebar Slot
+# Notifications Discussions Sidebar Slot
 
-### Slot ID: `course_outline_sidebar_slot`
+### Slot ID: `notifications_discussions_sidebar_slot`
 
 ## Description
 
-This slot is used to replace/modify/hide the course outline sidebar.
+This slot is used to replace/modify/hide the notifications discussions sidebar.
 
 ## Example
 
-The following `env.config.jsx` will replace the course outline sidebar entirely.
+The following `env.config.jsx` will replace the notifications discussions sidebar.
 
 ```js
 import { DIRECT_PLUGIN, PLUGIN_OPERATIONS } from '@openedx/frontend-plugin-framework';
 
 const config = {
   pluginSlots: {
-    course_outline_sidebar_slot: {
+    notifications_discussions_sidebar_slot: {
       keepDefault: false,
       plugins: [
         {

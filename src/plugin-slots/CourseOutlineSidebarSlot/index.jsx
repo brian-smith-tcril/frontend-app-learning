@@ -1,7 +1,6 @@
 import { PluginSlot } from '@openedx/frontend-plugin-framework';
 
 import CourseOutlineTray from '../../courseware/course/sidebar/sidebars/course-outline/CourseOutlineTray';
-import CourseOutlineTrigger from '../../courseware/course/sidebar/sidebars/course-outline/CourseOutlineTrigger';
 
 const CourseOutlineSidebarSlot = () => (
   <PluginSlot
@@ -11,7 +10,6 @@ const CourseOutlineSidebarSlot = () => (
     }}
   >
     <>
-      <CourseOutlineTrigger />
       <CourseOutlineTray />
     </>
   </PluginSlot>
